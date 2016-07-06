@@ -76,7 +76,6 @@ section{
 
 section#jumbo{
   text-align: center;
-  height: calc(100vh - 20px);
   height: calc(100vh - 5px);
   position: relative;
   font-family: 'Inconsolata', monospace;
@@ -133,7 +132,7 @@ section#jumbo{
   }
 
   .chevron{
-    transform: rotate(90deg) translate(-50%, 0%);
+    transform:translate(-50%, 0%);
     position: absolute;
     bottom:0px;
     left:50%;
@@ -203,7 +202,7 @@ section#about, section#contact{
   .container{
     width: 100%;
     max-width: 770px;
-    margin: 52px auto;
+    margin: 52px auto 16px auto;
     text-align: left;
   }
 
