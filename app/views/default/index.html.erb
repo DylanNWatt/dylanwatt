@@ -1,0 +1,66 @@
+<section id="jumbo">
+  <a href="#contact" id="contact-link">Contact</a>
+  <div class="jumbo-content">
+    <img src="<%=asset_path "logo.png"%> " alt="" class="logo">
+    <header class="brand">
+      DYLAN WATT
+    </header>
+    <h4 class="title">
+      Full Stack Developer<span class="blinking">|</span>
+    </h4>
+  </div>
+  <a href="#about" class="chevron" style=""> &gt; </a>
+</section>
+<section id="about">
+  <div>
+    <h1>About Me</h1>
+  </div>
+  <img src="<%=asset_path "me.png"%> " alt="" class="pretty-face">
+  <h2>I can help you build a robust, mobile friendly application from the ground up. <br>I'm a full stack developer with a passion for UX.</h2>
+  <div class="container">
+    <h1>Experience</h1>
+    <h2>I spent three years working with a variety of publishers in the education industry creating tailored web apps to reimagine their existing content in the digital space.</h2>
+    <br>
+    <br>
+    <h2>I then cofounded <a href="https://www.yepchat.com">yepchat.com</a>, a Venice, CA startup that helps businesses connect with their customers through many channels of communication.</h2>
+    <h1>Why Me?</h1>
+    <h2>Creating an app involves a lot of moving parts. I can help you realize your idea from beginning to end. I know what a feature needs, from database to crafting the UI.</h2>
+    <h1 class="category">I'm great with</h1>
+    <h2>UI/UX, Node.JS, AWS, Linux, AngularJS, HTML5, Git, Firebase</h2>
+    <h1 class="category">I'm pretty good with</h1>
+    <h2>Ruby on Rails, D3/Infographics, MySQL, Facebook API, Analytics, <span style="display:inline-block">Google Maps API, SEO</span> </h2>
+    <h1 class="category">I'm Learning</h1>
+    <h2>Elixir and Phoenix, Heroku, Autoscaling
+  </div>
+
+</section>
+<section id="contact">
+  <div>
+    <h1>Contact</h1>
+  </div>
+  <h2 class="container">
+    I'm currently taking on new clients. If you're interested, you can reach out to me at <a href="mailto:dylan@dylanwatt.com">dylan@dylanwatt.com</a>, or call/text me at <a href="tel://1-415-340-2315">(415) 340-2315</a>.
+  </h2>
+  <div class="container social">
+    <a href="https://angel.co/dylan-watt"><i class="fa fa-angellist" aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/dylanwatt"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <a href="http://stackoverflow.com/users/4338874/dylan-watt">    <i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+
+  </div>
+</section>
+
+<script type="text/javascript" charset="utf-8">
+  if(window.scrollY < 50){
+    var timeout = window.setTimeout(function(){
+      window.scrollBy(0, 150);
+    }, 10000)
+
+
+    function destroyAutoScroll(){
+      window.clearTimeout(timeout);
+      window.removeEventListener('scroll', destroyAutoScroll);
+    }
+
+    window.addEventListener('scroll', destroyAutoScroll)
+  }
+</script>
